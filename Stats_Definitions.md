@@ -16,34 +16,48 @@ Scrambling(130): The percent of time a player misses the green in regulation, bu
 Strokes Gained:Putting (02564):The number of putts a player takes from a specific distance is measured against a statistical baseline to determine the player's strokes gained or lost on a hole. The sum of the values for all holes played in a round minus the field average strokes gained/lost for the round is the player's Strokes gained/lost for that round. The sum of strokes gained for each round are divided by total rounds played. The Strokes Gained - concept is a by-product of the PGA TOUR's ShotLink Intelligence Program, which encourages academics to perform research against ShotLink statistical data.
 
 
-"SG_OffTee","02567":
+"Strokes Gained: Off the Tee (02567):The number of strokes a player takes from a specific distance off the tee on Par 4 & par 5's is measured against a statistical baseline to determine the player's strokes gained or lost off the tee on a hole. The sum of the values for all holes played in a round minus the field average strokes gained/lost for the round is the player's Strokes gained/lost for that round. The sum of strokes gained for each round are divided by total rounds played.
 
-"SG_AroundGreen","02569": 
+"Strokes Gained: Around the Green (02569): The number of Around the Green strokes a player takes from specific locations and distances are measured against a statistical baseline to determine the player's strokes gained or lost on a hole. The sum of the values for all holes played in a round minus the field average strokes gained/lost for the round is the player's Strokes gained/lost for that round. The sum of strokes gained for each round are divided by total rounds played.
 
-"SG_TeeToGreen","02674":
+"Strokes Gained: Tee to Green (02674): The per round average of the number of Strokes the player was better or worse than the field average on the same course & event minus the Players Strokes Gained putting value. 
 
-"SG_ApproachTheGreen","02568":
+Strokes Gained: Approach the Green (02568): The number of Approach the Green strokes a player takes from specific locations and distances are measured against a statistical baseline to determine the player's strokes gained or lost on a hole. The sum of the values for all holes played in a round minus the field average strokes gained/lost for the round is the player's Strokes gained/lost for that round. The sum of strokes gained for each round are divided by total rounds played. 
 
-"TotalDriving","129":
+Total Driving (129): Total Driving is computed by totaling a player's rank in both driving distance and driving accuracy.
 
-"BallStriking","158": 
+Ball Striking (158): Ball Striking is computed by totaling a player's rank in both Total Driving and Greens in Regulation.
 
-"LongestDrives","159": 
+Longest Drives (159): For all drives measured with a laser, this is the longest drive for the entire year.
 
-    "496": "Driving%320+",
-    "495": "Driving%300-320",
-    "454": "Driving%300+",
-    "455": "Driving%280-300",
-    "216": "Driving%260-280",
-    "457": "Driving%240-260",
-    "458": "Driving%<=240",
-    "02341": "%ofYardsbyTeeShot",
-    "02342": "%ofYardsbyTeeshotPar4",
-    "02343": "%ofYardsbyTeeshotPar5",
-    "102": "DrivingAccuracy%",
-    "02435": "RoughTendency",
-    "460": "RightRoughTendency",
-    "459": "LeftRoughTendency",
+Driving % 320+ yards (496): The percentage of time drives were greater than 320 yards. This only applies to drives on 'measured' driving holes where the distance was determined by a laser. 
+
+Driving %300-320",(495): The percentage of time drives were greater than 300 yards and less than or equal to 320 yards. This only applies to drives on 'measured' driving holes where the distance was determined by a laser. 
+
+Driving %300+ yards,(454): The percentage of time drives were greater than 300 yards. This only applies to drives on 'measured' driving holes where the distance was determined by a laser. 
+
+Driving %280-300 yards,(455): The percentage of time a drives were greater than 280 yards and less than or equal to 300 yards. This only applies to drives on 'measured' driving holes where the distance was determined by a laser.
+
+Driving % 260-280 yards,(216): The percentage of time a drives were greater than 260 yards and less than or equal to 280 yards. This only applies to drives on 'measured' driving holes where the distance was determined by a laser.
+
+Driving % 240-260 yards,(457): The percentage of time drives were greater than 240 yards and less than or equal to 260 yards. This only applies to drives on 'measured' driving holes where the distance was determined by a laser.
+
+Driving % <=240 yards (458): The percentage of time drives were less than or equal to 240 yards. This only applies to drives on 'measured' driving holes where the distance was determined by a laser.
+
+% of Yards by TeeShot (02341): For those par 4's and par 5's where the tee shot was determined by a laser, the percentage of the hole distances that are covered by the tee shot. This is computed by taking the total distance of the tee shot, and then dividing by the total distance of the holes. 
+ 
+% of Yards by TeeShot Par4 (02342):
+
+% of Yards by TeeShot Par5 (02343): 
+
+Driving Accuracy % (102):
+
+Rough Tendency (02435):
+
+Right Rough Tendency (460):
+
+Left Rough Tendency (459): 
+
     "080": "RRTScore",
     "081": "LRTScore",
     "01108": "FairwayBunkerTendency",
