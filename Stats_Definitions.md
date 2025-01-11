@@ -1,122 +1,248 @@
-Scoring Average (120): The weighted scoring average which takes the stroke average of the field into account. It is computed by adding a player's total strokes to an adjustment and dividing by the total rounds played. The adjustment is computed by determining the stroke average of the field for each round played. This average is subtracted from par to create an adjustment for each round. A player accumulates these adjustments for each round played.
+Stat Name: ScoringAverage 
+Description: Scoring Average 
+Definition: The weighted scoring average which takes the stroke average of the field into account. It is computed by adding a player's total strokes to an adjustment and dividing by the total rounds played. The adjustment is computed by determining the stroke average of the field for each round played. This average is subtracted from par to create an adjustment for each round. A player accumulates these adjustments for each round played.
+Stat Code:120
 
-Birdie Average (156): The average number of birdies made per round played.
+Stat Name: BirdieAverage 
+Description Birdie Average 
+Definition: The average number of birdies made per round played.
+Stat Code: 156
 
-Strokes Gained Total (SG:Total)(02675): The per round average of the number of Strokes the player was better or worse than the field average on the same course & event.
+Stat Name: SG:Total
+Description: Strokes Gained Total 
+Definition: The per round average of the number of Strokes the player was better or worse than the field average on the same course & event.
+Stat Code: 02675
 
-Driving Distance (101): The average number of yards per measured drive. These drives are measured on two holes per round. Care is taken to select two holes which face in opposite directions to counteract the effect of wind. Drives are measured to the point at which they come to rest regardless of whether they are in the fairway or not.
+Stat Name: DrivingDistance
+Description: Driving Distance 
+Definition: The average number of yards per measured drive. These drives are measured on two holes per round. Care is taken to select two holes which face in opposite directions to counteract the effect of wind. Drives are measured to the point at which they come to rest regardless of whether they are in the fairway or not.
+Stat Code:101
 
-Strokes Gained: Approach the Green (02568):The number of Approach the Green strokes a player takes from specific locations and distances are measured against a statistical baseline to determine the player's strokes gained or lost on a hole. The sum of the values for all holes played in a round minus the field average strokes gained/lost for the round is the player's Strokes gained/lost for that round. The sum of strokes gained for each round are divided by total rounds played. The Strokes Gained - concept is a by-product of the PGA TOUR's ShotLink Intelligence Program, which encourages academics to perform research against ShotLink statistical data.
+Stat Name: StrokesGainedApproachtheGreen 
+Description: Strokes Gained: Approach the Green 
+Definition: The number of Approach the Green strokes a player takes from specific locations and distances are measured against a statistical baseline to determine the player's strokes gained or lost on a hole. The sum of the values for all holes played in a round minus the field average strokes gained/lost for the round is the player's Strokes gained/lost for that round. The sum of strokes gained for each round are divided by total rounds played. The Strokes Gained - concept is a by-product of the PGA TOUR's ShotLink Intelligence Program, which encourages academics to perform research against ShotLink statistical data.
+Stat Code: 02568
 
-Greens in Regulation % (103): The percent of time a player was able to hit the green in regulation (greens hit in regulation/holes played). Note: A green is considered hit in regulation if any portion of the ball is touching the putting surface after the GIR stroke has been taken. (The GIR stroke is determined by subtracting 2 from par (1st stroke on a par 3, 2nd on a par 4, 3rd on a par 5))
-    
-Scrambling(130): The percent of time a player misses the green in regulation, but still makes par or better. 
+Stat Name: GreensinRegulation%
+Description: Greens in Regulation % 
+Definition: The percent of time a player was able to hit the green in regulation (greens hit in regulation/holes played). Note: A green is considered hit in regulation if any portion of the ball is touching the putting surface after the GIR stroke has been taken. (The GIR stroke is determined by subtracting 2 from par (1st stroke on a par 3, 2nd on a par 4, 3rd on a par 5))
+Stat Code: 103
 
+Stat Name: Scrambling  
+Description: Scrambling 
+Definition:The percent of time a player misses the green in regulation, but still makes par or better. 
+Stat Code: 130
 
-Strokes Gained:Putting (02564):The number of putts a player takes from a specific distance is measured against a statistical baseline to determine the player's strokes gained or lost on a hole. The sum of the values for all holes played in a round minus the field average strokes gained/lost for the round is the player's Strokes gained/lost for that round. The sum of strokes gained for each round are divided by total rounds played. The Strokes Gained - concept is a by-product of the PGA TOUR's ShotLink Intelligence Program, which encourages academics to perform research against ShotLink statistical data.
+Stat Name: StrokesGainedPutting
+Description: Strokes Gained:Putting 
+Definition:The number of putts a player takes from a specific distance is measured against a statistical baseline to determine the player's strokes gained or lost on a hole. The sum of the values for all holes played in a round minus the field average strokes gained/lost for the round is the player's Strokes gained/lost for that round. The sum of strokes gained for each round are divided by total rounds played. The Strokes Gained - concept is a by-product of the PGA TOUR's ShotLink Intelligence Program, which encourages academics to perform research against ShotLink statistical data.
+Stat Code:02564
 
+Stat Name: StrokesGainedOfftheTee
+Description: Strokes Gained: Off the Tee 
+Definition:The number of strokes a player takes from a specific distance off the tee on Par 4 & par 5's is measured against a statistical baseline to determine the player's strokes gained or lost off the tee on a hole. The sum of the values for all holes played in a round minus the field average strokes gained/lost for the round is the player's Strokes gained/lost for that round. The sum of strokes gained for each round are divided by total rounds played.
+Stat Code: 02567
 
-"Strokes Gained: Off the Tee (02567):The number of strokes a player takes from a specific distance off the tee on Par 4 & par 5's is measured against a statistical baseline to determine the player's strokes gained or lost off the tee on a hole. The sum of the values for all holes played in a round minus the field average strokes gained/lost for the round is the player's Strokes gained/lost for that round. The sum of strokes gained for each round are divided by total rounds played.
+Stat Name: StrokesGainedAroundtheGreen
+Description:Strokes Gained: Around the Green  
+Definition:The number of Around the Green strokes a player takes from specific locations and distances are measured against a statistical baseline to determine the player's strokes gained or lost on a hole. The sum of the values for all holes played in a round minus the field average strokes gained/lost for the round is the player's Strokes gained/lost for that round. The sum of strokes gained for each round are divided by total rounds played.
+Stat Code: 02569
 
-"Strokes Gained: Around the Green (02569): The number of Around the Green strokes a player takes from specific locations and distances are measured against a statistical baseline to determine the player's strokes gained or lost on a hole. The sum of the values for all holes played in a round minus the field average strokes gained/lost for the round is the player's Strokes gained/lost for that round. The sum of strokes gained for each round are divided by total rounds played.
+Stat Name: StrokesGainedTeetoGreen  
+Description:Strokes Gained: Tee to Green  
+Definition:The per round average of the number of Strokes the player was better or worse than the field average on the same course & event minus the Players Strokes Gained putting value. 
+Stat Code:02674
 
-"Strokes Gained: Tee to Green (02674): The per round average of the number of Strokes the player was better or worse than the field average on the same course & event minus the Players Strokes Gained putting value. 
+Stat Name: StrokesGainedApproachtheGreen  
+Description:Strokes Gained: Approach the Green  
+Definition:The number of Approach the Green strokes a player takes from specific locations and distances are measured against a statistical baseline to determine the player's strokes gained or lost on a hole. The sum of the values for all holes played in a round minus the field average strokes gained/lost for the round is the player's Strokes gained/lost for that round. The sum of strokes gained for each round are divided by total rounds played. 
+Stat Code:02568
 
-Strokes Gained: Approach the Green (02568): The number of Approach the Green strokes a player takes from specific locations and distances are measured against a statistical baseline to determine the player's strokes gained or lost on a hole. The sum of the values for all holes played in a round minus the field average strokes gained/lost for the round is the player's Strokes gained/lost for that round. The sum of strokes gained for each round are divided by total rounds played. 
+Stat Name: TotalDriving 
+Description: Total Driving 
+Definition:Total Driving is computed by totaling a player's rank in both driving distance and driving accuracy.
+Stat Code:129
 
-Total Driving (129): Total Driving is computed by totaling a player's rank in both driving distance and driving accuracy.
+Stat Name:BallStriking
+Description: Ball Striking 
+Definition:Ball Striking is computed by totaling a player's rank in both Total Driving and Greens in Regulation.
+Stat Code:158
 
-Ball Striking (158): Ball Striking is computed by totaling a player's rank in both Total Driving and Greens in Regulation.
+Stat Name: LongestDrives
+Description:Longest Drives  
+Definition:For all drives measured with a laser, this is the longest drive for the entire year.
+Stat Code:159
 
-Longest Drives (159): For all drives measured with a laser, this is the longest drive for the entire year.
+Stat Name: Driving%320+ yards
+Description:Driving % 320+ yards 
+Definition: The percentage of time drives were greater than 320 yards. This only applies to drives on 'measured' driving holes where the distance was determined by a laser. 
+Stat Code:496
 
-Driving % 320+ yards (496): The percentage of time drives were greater than 320 yards. This only applies to drives on 'measured' driving holes where the distance was determined by a laser. 
+Stat Name:Driving%300-320"
+Description:Driving % 300-320"
+Definition: The percentage of time drives were greater than 300 yards and less than or equal to 320 yards. This only applies to drives on 'measured' driving holes where the distance was determined by a laser. 
+Stat Code:495
 
-Driving %300-320",(495): The percentage of time drives were greater than 300 yards and less than or equal to 320 yards. This only applies to drives on 'measured' driving holes where the distance was determined by a laser. 
+Stat Name:Driving%300+yards 
+Description: Driving % 300+ yards 
+Definition: The percentage of time drives were greater than 300 yards. This only applies to drives on 'measured' driving holes where the distance was determined by a laser. 
+Stat Code:454
 
-Driving %300+ yards,(454): The percentage of time drives were greater than 300 yards. This only applies to drives on 'measured' driving holes where the distance was determined by a laser. 
+Stat Name: Driving%280-300yards
+Description: Driving % 280-300 yards
+Definition: The percentage of time a drives were greater than 280 yards and less than or equal to 300 yards. This only applies to drives on 'measured' driving holes where the distance was determined by a laser.
+Stat Code: 455
 
-Driving %280-300 yards,(455): The percentage of time a drives were greater than 280 yards and less than or equal to 300 yards. This only applies to drives on 'measured' driving holes where the distance was determined by a laser.
+Stat Name: Driving%260-280yards 
+Description: Driving % 260-280 yards 
+Definition:The percentage of time a drives were greater than 260 yards and less than or equal to 280 yards. This only applies to drives on 'measured' driving holes where the distance was determined by a laser.
+Stat Code: 216
 
-Driving % 260-280 yards,(216): The percentage of time a drives were greater than 260 yards and less than or equal to 280 yards. This only applies to drives on 'measured' driving holes where the distance was determined by a laser.
+Stat Name: Driving%240-260yards
+Description: Driving % 240-260 yards 
+Definition:The percentage of time drives were greater than 240 yards and less than or equal to 260 yards. This only applies to drives on 'measured' driving holes where the distance was determined by a laser.
+Stat Code: 457
 
-Driving % 240-260 yards,(457): The percentage of time drives were greater than 240 yards and less than or equal to 260 yards. This only applies to drives on 'measured' driving holes where the distance was determined by a laser.
+Stat Name: Driving%<=240yards
+Description:Driving % <=240 yards 
+Definition:The percentage of time drives were less than or equal to 240 yards. This only applies to drives on 'measured' driving holes where the distance was determined by a laser.
+Stat Code:  458
 
-Driving % <=240 yards (458): The percentage of time drives were less than or equal to 240 yards. This only applies to drives on 'measured' driving holes where the distance was determined by a laser.
+Stat Name: %ofYardsbyTeeShot 
+Description:% of Yards by TeeShot 
+Defintion: For those par 4's and par 5's where the tee shot was determined by a laser, the percentage of the hole distances that are covered by the tee shot. This is computed by taking the total distance of the tee shot, and then dividing by the total distance of the holes. 
+Stat Code: 02341
 
-% of Yards by TeeShot (02341): For those par 4's and par 5's where the tee shot was determined by a laser, the percentage of the hole distances that are covered by the tee shot. This is computed by taking the total distance of the tee shot, and then dividing by the total distance of the holes. 
- 
-% of Yards by TeeShot Par4 (02342):
+Stat Name: %ofYardsbyTeeShotPar4 
+Description:% of Yards by TeeShot Par4 
+Definition: 
+Stat Code: 02342
 
-% of Yards by TeeShot Par5 (02343): 
+Stat Name: %ofYardsbyTeeShotPar5
+Description:% of Yards by TeeShot Par5 
+Definition:
+Stat Code: 02343 
 
-Driving Accuracy % (102):
+Stat Name:RoughTendency
+Description:Rough Tendency 
+Stat Code: 02435
 
-Rough Tendency (02435):
+Stat Name: RightRoughTendency
+Description:Right Rough Tendency 
+Definition:
+Stat Code: 460
 
-Right Rough Tendency (460):
+Stat Name:LRT
+Description:Left Rough Tendency 
+Definition:
+Stat Code: 459
 
-Left Rough Tendency (459): 
+Stat Name: RRT
+Description:Right Rough Tendency Score 
+Definition:
+Stat Code:(080)
 
-    "080": "RRTScore",
-    "081": "LRTScore",
-    "01108": "FairwayBunkerTendency",
-    "461": "MissFairway%Other",
-    "213": "HitFairway%",
-    "02420": "DistancefromFairwayEdge",
-    "02421": "DistancefromFairwayCenter",
-    "02442": "LeftTendency",
-    "02443": "RightTendency",
-    "02438": "GoodDrive%",
-    "02401": "ClubheadSpeed",
-    "02402": "BallSpeed",
-    "02403": "SmashFactor",
-    "02404": "Launch Angle",
-    "02405": "SpinRate",
-    "02406": "DistancetoApex",
-    "02407": "ApexHeight",
-    "02408": "HangTime",
-    "02409": "CarryDistance",
-    "02410": "CarryEfficiency",
-    "02411": "TotalDistanceEfficiency",
-    "02412": "TotalDrivingEfficiency",
-    "02437": "Greens/FringeInRegs",
-    "326": "GIR%200+",
-    "327": "GIR%175-200",
-    "328": "GIR%150-175",
-    "329": "GIR%125-150",
-    "330": "GIR<125",
-    "077": "GIR%100-125",
-    "02332": "GIR%100+",
-    "02330": "GIR%<100",
-    "078": "GIR%75-100",
-    "079": "GIR%<75",
-    "190": "GIR%FromFairway",
-    "02434": "GIR%FromFWBunker",
-    "199": "GIR%OTF",
-    "331": "ProximitytoHole",
-    "02361": "Approach>275",
-    "02360": "Approach250-275",
-    "02359": "Approach225-250",
-    "02358": "Aproach200-225",
-    "336": "Approach>200",
-    "337": "Aproach175-200",
-    "338": "Approach150-175",
-    "339": "Approach125-150",
-    "340": "Approach50-125",
-    "074": "Approach100-125",
-    "075": "Approach75-100",
-    "076": "Approach50-75",
-    "02329": "ApproachInside100",
-    "02331": "Approach>100",
-    "431": "FairwayProximity",
-    "437": "RoughProximity",
-    "432": "LeftRoughProximity",
-    "433": "RightRoughProximity",
-    "02375": "ApproachRgh>275",
-    "02374": "ApproachRgh250-275",
-    "02373": "ApproachRgh225-250",
-    "02372": "ApproachRgh200-225",
+Stat Name:LRTScore
+Description: Left Rough Tendency  
+Definition:
+Stat Code: 081
+
+Stat Name:FairwayBunkerTendency
+Description: Fairway Bunker Tendency
+Definition: 
+Stat Code: (01108)
+
+Stat Name: MissFairway%Other
+Description: Missed Fairway % Other  
+Definition
+Stat Code: 461
+
+Stat Name: HitFairway%:
+Description:Hit Fairway % 
+Definition:
+Stat Code: 213
+(DistancefromFairwayEdge)(02420):
+
+(DistancefromFairwayCenter)(02421):
+
+(Left Tendency)(02442):
+
+(RightTendency)(02443):
+
+(GoodDrive%)(02438):
+
+(Clubhead Speed)(02401):
+
+(BallSpeed)(02402):
+
+(SmashFactor)(02403):
+
+(LaunchAngle)(02404):
+
+(SpinRate)(02405):
+
+(DistanceToApex)(02406):
+
+(ApexHeight) (02407):
+
+(HangTime)(02408):
+
+(CarryDistance)(02409):
+
+(CarryEfficiency)(02410):
+
+(TotalDistanceEfficiency)(02411):
+
+(TotalDrivingEfficiency)(02412):
+
+(Greens/FringeInRegs)(02437):
+
+(GIR%200+)(326):
+
+(GIR%175-200)(327):
+
+(GIR%150-175)(328):
+
+(GIR%125-150)(329):
+
+(GIR<125)(330): 
+
+(GIR%100-125)(077): 
+
+(GIR%100+) (02332):
+
+(GIR%<100")(02330):
+
+(GIR%75-100)(078): 
+
+(GIR%<75) (079): 
+
+190: "GIR%FromFairway",
+02434: "GIR%FromFWBunker",
+199: "GIR%OTF",
+331: "ProximitytoHole",
+02361: "Approach>275",
+02360: "Approach250-275",
+02359: "Approach225-250",
+02358: "Aproach200-225",
+336: "Approach>200",
+337: "Aproach175-200",
+338: "Approach150-175",
+339: "Approach125-150",
+340: "Approach50-125",
+074: "Approach100-125",
+075: "Approach75-100",
+076: "Approach50-75",
+02329: "ApproachInside100",
+02331: "Approach>100",
+431: "FairwayProximity",
+437: "RoughProximity",
+432: "LeftRoughProximity",
+433: "RightRoughProximity",
+02375: "ApproachRgh>275",
+02374: "ApproachRgh250-275",
+02373: "ApproachRgh225-250",
+02372: "ApproachRgh200-225",
     "02371": "ApproachRgh>100",
     "02370": "ApproachRghInside100",
     "02369": "ApproachRgh>200",
