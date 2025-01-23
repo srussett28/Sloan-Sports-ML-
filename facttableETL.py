@@ -61,9 +61,9 @@ def get_tournament_past_results(tournament_id, year=None, api_key="your_api_key"
 # Define the database connection
 def connect_to_db():
     return psycopg2.connect(
-        dbname="postgres",
-        user="postgres",
-        password=",  # Replace with your actual password
+        dbname="",
+        user="",
+        password="",
         host="localhost",
         port="5432"
     )
@@ -102,10 +102,61 @@ def profile_data(df):
 
 def main():
     tournament_ids = {
-        "R2024016": "The Sentry Tournament Of Champions",
-        "R2024006": "Sony Open in Hawaii",
-     
+    "R2024016": "The Sentry Tournament Of Champions",
+    "R2024006": "Sony Open in Hawaii",
+    "R2024002": "The American Express",
+    "R2024004": "Farmers Insurance Open",
+    "R2024005": "ATT Pebble Beach ProAm",
+    "R2024003": "WM Phoenix Open",
+    "R2024007": "The Genesis Invitational",
+    "R2024540": "Mexico Open at Vidante",
+    "R2024010": "Cognizant Classic In the Palm Beaches",
+    "R2024009": "Arnold Palmer Invitational",
+    "R2024483": "Puerto Rico Open",
+    "R2024011": "The Players Championship",
+    "R2024475": "Valspar Championship",
+    "R2024020": "Texas Childrens Houston Open",
+    "R2024041": "Valero Texas Open",
+    "R2024014": "The Masters",
+    "R2024012": "RBC Heritage",
+    "R2024522": "Corales Puntacana Championship",
+    "R2024018": "Zurich Classic of New Orleans",
+    "R2024019": "The CJ Cup Byron Nelson",
+    "R2024480": "Wells Fargo Championship",
+    "R2024553": "Myrtle Beach Classic",
+    "R2024033": "PGA Championship",
+    "R2024021": "Charles Schwab Challenge",
+    "R2024032": "RBC Canadian Open",
+    "R2024023": "The Memorial Tournament",
+    "R2024026": "The US Open",
+    "R2024034": "Travelers Championship",
+    "R2024523": "Rocket Mortgage Classic",
+    "R2024030": "The John Deere Classic",
+    "R2024541": "Genesis Scottish Open",
+    "R2024518": "ISCO Championship",
+    "R2024100": "The Open Championship",
+    "R2024472": "Barracuda Championship",
+    "R2024525": "3M Open",
+    "R2024519": "Mens Olympic Golf Competition",
+    "R2024013": "Wyndham Championship",
+    "R2024027": "FedEx St Jude Championship",
+    "R2024028": "BMW Championship",
+    "R2024060": "Tour Championship",
+    "R2024464": "Procore Championship",
+    "R2024527": "The Presidents Cup",
+    "R2023468": "The Ryder Cup",
+    "R2024054": "Sanderson Farms Championship",
+    "R2024554": "Black Desert Championship",
+    "R2024047": "Shriners Childrens Open",
+    "R2024527": "Zozo Championship",
+    "R2024457": "World Wide Technology Championship",
+    "R2024528": "Butterfield Bermuda Championship",
+    "R2024493": "The RSM Classic",
+    "R2024478": "Hero World Challenge",
+    "R2024551": "Grant Thornton Invitiational"    
     }
+     
+    
     years = range(2007, 2025)  # Historical years
     all_data = []
 
