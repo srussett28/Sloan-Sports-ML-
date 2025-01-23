@@ -3,7 +3,7 @@ import pandas as pd  # Import pandas for DataFrame handling
 
 # Replace with your API endpoint and key
 url = "https://orchestrator.pgatour.com/graphql"
-X_API_KEY = "da2-gsrx5bibzbb4njvhl7t37wqyl4"
+X_API_KEY = 
 
 # Introspection query for TourCupSplit
 introspection_query = """
