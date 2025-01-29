@@ -31,7 +31,7 @@ def get_tournament_past_results(tournament_id, year=None, api_key="your_api_key"
         }"""
     }
 
-    # Send the POST request
+   
     response = requests.post(
         url,
         json=query,
@@ -41,7 +41,7 @@ def get_tournament_past_results(tournament_id, year=None, api_key="your_api_key"
     if response.status_code != 200:
         raise Exception(f"API request failed with status code {response.status_code}")
 
-    # Parse and return the data
+   
     data = response.json()["data"]["tournamentPastResults"]["players"]
     results = []
     for player in data:
@@ -58,7 +58,7 @@ def get_tournament_past_results(tournament_id, year=None, api_key="your_api_key"
         })
     return pd.DataFrame(results)
 
-# Define the database connection
+
 def connect_to_db():
     return psycopg2.connect(
         dbname="",
@@ -68,11 +68,11 @@ def connect_to_db():
         port="5432"
     )
 
-# Insert data into PostgreSQL
+
 def insert_into_db(df, conn):
     cursor = conn.cursor()
     for _, row in df.iterrows():
-        print(row)  # Debugging step to identify problematic data
+        print(row)  
         try:
             cursor.execute("""
                 INSERT INTO tournament_results (
@@ -92,7 +92,7 @@ def insert_into_db(df, conn):
     conn.commit()
     cursor.close()
 
-# Profile the data
+
 def profile_data(df):
     print("Data Profiling Report:")
     print("Shape of the DataFrame:", df.shape)
@@ -157,7 +157,7 @@ def main():
     }
      
     
-    years = range(2007, 2025)  # Historical years
+    years = range(2007, 2025)  
     all_data = []
 
   
@@ -198,12 +198,11 @@ def main():
     combined_data["Par Relative Score"] = pd.to_numeric(combined_data["Par Relative Score"], errors="coerce")
     combined_data["Par Relative Score"] = combined_data["Par Relative Score"].fillna(0).clip(lower=-2147483648, upper=2147483647)
 
-    # Clean Total Score column
+   
     combined_data["Total Score"] = combined_data["Total Score"].replace("-", 0)  # Replace '-' with 0
     combined_data["Total Score"] = pd.to_numeric(combined_data["Total Score"], errors="coerce").fillna(0).astype(int)
     combined_data["Total Score"] = combined_data["Total Score"].clip(lower=0, upper=2147483647)
 
-    # Ensure Position is within valid range
     combined_data["Position"] = combined_data["Position"].clip(lower=0, upper=2147483647)
    
     conn = connect_to_db()

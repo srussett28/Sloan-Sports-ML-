@@ -2,9 +2,9 @@ import pandas as pd
 import requests
 import psycopg2
 
-# Function to get player stats from PGA Tour API
+
 def get_df(YEAR, STAT_ID, DESCR):
-    X_API_KEY = "da2-gsrx5bibzbb4njvhl7t37wqyl4"
+    X_API_KEY = 
     url = "https://orchestrator.pgatour.com/graphql"
     req = {
         "operationName": "StatDetails",
@@ -36,9 +36,9 @@ def get_df(YEAR, STAT_ID, DESCR):
 
     return pd.DataFrame(table)
 
-# Function to get all players
+
 def get_players():
-    X_API_KEY = "da2-gsrx5bibzbb4njvhl7t37wqyl4"
+    X_API_KEY = 
     url = "https://orchestrator.pgatour.com/graphql"
     req = {
         "operationName": "PlayerDirectory",
@@ -59,7 +59,7 @@ def get_players():
     table = [{"PID": item["id"], "PLAYER": item["displayName"], "Country": item["country"]} for item in data]
     return pd.DataFrame(table)
 
-# Overview stats mapping
+
 Overview_Stats = {
     "120": "scoring_avg_adjusted",
     "156": "birdie_avg",
@@ -71,7 +71,7 @@ Overview_Stats = {
     "02564": "sg_putting",
 }
 
-# Pipeline function
+
 def pipeline():
     years = list(range(2007, 2025))
     overview_dfs = []
@@ -93,19 +93,19 @@ def pipeline():
 
         overview_df["Year"] = year
 
-        # Merge player data, keeping only players with stats
+       
         overview_df = pd.merge(overview_df, players, on=["PID", "PLAYER"], how="left")
 
-        # Drop rows where all stats are missing
+        
         stat_columns = list(Overview_Stats.values())
         overview_df = overview_df.dropna(subset=stat_columns, how="all")
 
         overview_dfs.append(overview_df)
 
-    # Combine all years into a single DataFrame
+    
     overview_df = pd.concat(overview_dfs, ignore_index=True)
 
-    # Ensure correct column order
+   
     column_mapping = {
         "PID": "pid",
         "PLAYER": "player_name",
@@ -122,10 +122,10 @@ def pipeline():
     
     overview_df = overview_df.rename(columns=column_mapping)
     
-    # Drop extra columns
+  
     overview_df = overview_df.drop(columns=["Country"], errors="ignore")
 
-    # Convert data types
+  
     float_columns = ["scoring_avg_adjusted", "birdie_avg", "sg_total", "driving_distance", "sg_approach_green", "gir_percent", "scrambling", "sg_putting"]
     for col in float_columns:
         overview_df[col] = pd.to_numeric(overview_df[col], errors="coerce").fillna(0)
@@ -135,13 +135,13 @@ def pipeline():
 
     print("✅ Data cleaned and processed successfully!")
     
-    # Save to Excel for verification
+    
     overview_df.to_excel("cleaned_overview_data.xlsx", index=False)
     print("📤 Data exported to cleaned_overview_data.xlsx!")
 
     return overview_df
 
-# Insert into PostgreSQL
+
 def insert_into_database(data, connection_params):
     """
     Inserts cleaned data into the PostgreSQL overview_table.
@@ -152,10 +152,10 @@ def insert_into_database(data, connection_params):
         "driving_distance", "sg_approach_green", "gir_percent", "scrambling", "sg_putting"
     ]
 
-    # Ensure correct column order
+  
     data = data[expected_columns]
 
-    # Convert DataFrame to list of tuples
+   
     data_to_insert = [tuple(row) for row in data.itertuples(index=False, name=None)]
 
     query = """
@@ -177,16 +177,16 @@ def insert_into_database(data, connection_params):
     except Exception as e:
         print(f"❌ Error inserting data: {e}")
 
-# **📌 PostgreSQL Connection Parameters**
+
 connection_params = {
     "dbname": "postgres",
-    "user": "postgres",
-    "password": "postgres",  
+    "user": "",
+    "password": "",  
     "host": "localhost",
     "port": 5432,
 }
 
-# **📌 Run the pipeline and insert into PostgreSQL**
+
 if __name__ == "__main__":
     cleaned_df = pipeline()
     insert_into_database(cleaned_df, connection_params)
