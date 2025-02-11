@@ -166,8 +166,8 @@ def pipeline():
 
    
     connection_params = {
-        "dbname": "postgres",
-        "user": "postgres",
+        "dbname": "",
+        "user": "",
         "password": "",
         "host": "localhost",
         "port": 5432,
