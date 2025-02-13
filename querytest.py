@@ -90,7 +90,7 @@ def get_hole_details(tournament_id, course_id, hole, api_key):
     return pd.DataFrame(stats)
 
 
-df = get_hole_details("R2024026", "528", 1, "da2-gsrx5bibzbb4njvhl7t37wqyl4" )
+df = get_hole_details("R2024026", "528", 1, API )
 
 # 🔹 Show the result
 print(df)
